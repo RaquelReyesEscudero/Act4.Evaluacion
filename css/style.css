@@ -1,0 +1,164 @@
+/* -------------------------COLORES------------------------ */
+:root{
+    --white: white;
+    --black: rgb(39, 39, 39);
+    --grey: rgb(59, 59, 59);
+    --greyLight: rgb(179, 179, 179);
+    --primary: rgb(228, 178, 132);
+    --primaryLight: rgb(231, 206, 183);
+    --secondary: rgb(183, 146, 204);
+    --secondaryLight: rgb(231, 210, 243);
+    --secondaryDark: rgb(98, 72, 114);
+}
+
+/* ----------------------ESTILO GENERAL-------------------- */
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60%;
+    height: 100vh;
+    color: var(--white);
+    font-weight: lighter;
+}
+
+body{
+    background-image: linear-gradient(var(--secondaryLight), var(--secondary));
+    /*NO FUNCIONA: cursor: url('../img/mouse_pointer.png'), auto; */
+}
+
+/* ----------------TAMAÑO DE LA CAJA GENERAL---------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------ESTILO FUENTES---------------------- */
+h1{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+h4{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+/* ******************************************************** */
+/* --------------HEADER--------------- */
+header div{
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem
+}
+
+header h1{
+    font-size: 2rem;
+}
+
+hr{
+    filter: opacity(50%);
+    margin: 3rem;
+}
+
+/* --------------BUSCADOR--------------- */
+
+/* --------Caja-------- */
+.buscador{
+    background-color: var(--primary);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+}
+
+/* --------Letras-------- */
+.buscador a{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buscador a:hover{
+    color: var(--primaryLight);
+}
+
+/* ------------------------MAIN------------------------- */
+/* --------Ubicación-------- */
+.ubicacion img{
+    width: 2rem;
+}
+
+.ubicacion a{
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+/* ----------------------FORMULARIO----------------------- */
+.formulario{
+    background-color: var(--secondary);
+    padding: 4rem;
+    padding-bottom: 9rem;
+    text-align: center;
+}
+
+.formulario legend{
+    color: var(--white);
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding: 3rem; /* espacio entre las celdas y la caja */
+}
+
+.container_input{
+    margin-bottom: 1rem; /* espacio entre las celdas */
+}
+
+.container_input input, textarea{
+    width: 55%;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem; /* tamaño de cada celdas */
+
+}
+
+/* --------Botón-------- */
+.boton_enviar{
+    background-color: var(--secondaryLight);
+    border: none;
+    color: var(--secondaryDark);
+    padding: 1rem;
+    width: 55%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ----------------------FOOTER----------------------- */
+footer{
+    text-align: center;
+    background-color: var(--secondaryDark);
+    padding: 20px;
+}
+
+footer img{
+    width: 30px;
+    margin: 1rem;
+}
+
+footer img:hover{
+    filter: opacity(20%);
+    cursor: pointer;
+}
