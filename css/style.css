@@ -1,10 +1,10 @@
 /* -------------------------COLORES------------------------ */
 :root{
-    --white: white;
+    --white: rgb(112, 31, 31);
     --black: rgb(39, 39, 39);
     --grey: rgb(59, 59, 59);
     --greyLight: rgb(179, 179, 179);
-    --primary: rgb(228, 178, 132);
+    --primary: rgb(240, 203, 168);
     --primaryLight: rgb(231, 206, 183);
     --secondary: rgb(183, 146, 204);
     --secondaryLight: rgb(231, 210, 243);
@@ -13,18 +13,30 @@
 
 /* ----------------------ESTILO GENERAL-------------------- */
 html{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 60%;
+    font-family: quicksand;
+    font-size: 80%;
     height: 100vh;
     color: var(--white);
     font-weight: lighter;
+    scroll-behavior: smooth;      
+    text-align: center;
+    
 }
 
-body{
-    background-image: linear-gradient(var(--secondaryLight), var(--secondary));
-    /*NO FUNCIONA: cursor: url('../img/mouse_pointer.png'), auto; */
+.meter_porfolio img{
+   height: fill;
 }
-
+/* ------------------DIVIDIR EN COLUMNAS------------------- */
+@media (min-width:768px){
+    .columnas{
+        display: flex;
+        column-count: 2;
+        column-gap: 0rem;
+    }
+}
+.columna1{
+    background-color: var(--secondaryLight);
+}
 /* ----------------TAMAÑO DE LA CAJA GENERAL---------------- */
 *{
     box-sizing: border-box;
@@ -34,13 +46,15 @@ body{
 
 /* ---------------------ESTILO FUENTES---------------------- */
 h1{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: lighter;
+    color: var(--black);
 }
 
 h2{
     font-size: 2rem;
     font-weight: lighter;
+    color: var(--black);
 }
 
 h3{
@@ -108,6 +122,44 @@ hr{
     color: var(--white);
     text-decoration: none;
 }
+
+/* --------Selector de proyectos-------- */
+.selector_proyectos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20rem;
+    
+    justify-content: space-around;
+    margin: 20rem;
+}
+
+.selector_proyectos img{
+    width: 16rem;
+}
+
+/* --------Imágenes carrusel-------- */
+.carrusel{
+    display:flex;
+    width:600px;
+    height:430px;
+}
+
+.carrusel img{
+    width:0px;
+    flex-grow:1;
+    object-fit:cover;
+    opacity: .8;
+    transition:.5 ease;
+}
+
+section img:hover{
+    cursor:crosshair;
+    width:300px;
+    opacity:1;
+    filter:contrast(120%);
+    }
+
 /* ----------------------FORMULARIO----------------------- */
 .formulario{
     background-color: var(--secondary);
@@ -143,7 +195,11 @@ hr{
     padding: 1rem;
     width: 55%;
     border-radius: 6px;
-    cursor: pointer;
+}
+
+.boton_enviar:hover{
+    filter: opacity(80%);
+    cursor: url('../img/mouse_pointer.png'), pointer;
 }
 
 /* ----------------------FOOTER----------------------- */
@@ -154,11 +210,18 @@ footer{
 }
 
 footer img{
-    width: 30px;
+    width: 4rem;
     margin: 1rem;
 }
 
 footer img:hover{
     filter: opacity(20%);
     cursor: pointer;
+}
+
+.imagen_footer{
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
 }

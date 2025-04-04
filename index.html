@@ -5,70 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet
     " href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Julius+Sans+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Porfolio_Raquel_Reyes</title>
 </head>
 <body>
     <header>
-        <!-- BARRA NAVEGACIÓN -->
-        <div>
-            <h1>Raquel Reyes</h1> 
-            <h2>Modeladora 3D</h2>
-        </div>
-        <HR>
-        <nav class="buscador">
-            <a href="#sobremi">Sobre mí</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#cv">CV</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-
+            <!-- BARRA NAVEGACIÓN -->
+            <div>
+                <h1>Raquel Reyes</h1> 
+                <h2>Modeladora 3D</h2>
+            </div>   
+            <HR>
     </header>
     <main>
-        <!-- SECCIONES DEL PORTFOLIO -->
-        <section class="sobremi">
-        <h1 id="sobremi">CÓNOCEME</h1>
-            <div class="ubicacion">
-                <img src="img/ubicacion.png" alt="icono ubicación">
-                <a href="https://maps.app.goo.gl/jcfgtDzZhvGgeiqm6">Maracena, Granada</a>
+        <section class="columnas"> 
+            <div class="columna1">               
+                <nav class="buscador">
+                    <a href="#sobremi">Sobre mí</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#cv">CV</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
             </div>
-        <p>texto sobre mí</p>
-        </section>
-        <section class="proyectos">
-        <h1 id="proyectos">ESTE ES MI TRABAJO</h1>
-        <p>texto sobre mis proyectos</p>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        </section>
-        <section  class="cv">
-        <h1 id="cv">CV</h1>
-        <p>texto sobre mí</p>
-        </section>
-        <section  class="contacto">
-        
-        <!-- FORMULARIO CONTACTO -->
-        <section class="formulario">
-            <legend id="contacto">¡ESCRÍBEME!</legend>
-            <div class="inputs">
-                <div class="container_input">
-                    <label for="nombre"></label>
-                    <input type="nombre" placeholder="Nombre">
+            
+            <!-- SECCIONES DEL PORTFOLIO -->
+            <div class="columna2">
+                <section class="sobremi">
+                    <h1 id="sobremi">CÓNOCEME</h1>
+                        <div class="ubicacion">
+                            <img src="img/ubicacion.png" alt="icono ubicación">
+                            <a href="https://maps.app.goo.gl/jcfgtDzZhvGgeiqm6">Maracena, Granada</a>
+                        </div>
+                    <p>texto sobre mí</p>
+                </section>
+                <section  class="cv">
+                        <h1 id="cv">CURRÍCULUM</h1>
+                        <p>texto sobre mí</p>
+                </section>
+                <div class="proyectos">
+                    <h1 id="proyectos">PROYECTOS</h1>
+                    <p>texto sobre mis proyectos</p>
+                        <div class="selector_proyectos">
+                            <a href="#diseño_personajes"><img src="img/personajes.svg" alt="Diseño de personajes"></a>
+                            <a href="#diseño_props"><img src="img/props.svg" alt="Diseño de props"></a>
+                            <a href="#diseño_impresion"><img src="img/environment.svg" alt="Diseño para impresion "></a>
+                        </div>
+                        <div class="meter_porfolio">
+                            <div id="diseño_personajes">
+                                <img src="img/porfolio1a.png" alt="Diseño de personajes">
+                                    <section class="carrusel">
+                                        <img src="img/game_screenshot1.png" alt="">
+                                        <img src="img/game_screenshot2.png" alt="">
+                                        <img src="img/game_screenshot3.png" alt="">
+                                        <img src="img/game_screenshot4.png" alt="">
+                                    </section>
+                                <img src="img/porfolio1b.png" alt="Diseño de personajes">
+                                <!-- <img src="img/porfolio2.png" alt="Diseño de personajes2">
+                                <img src="img/porfolio3.png" alt="Diseño de personajes3">                
+                            </div>
+                            <div id="diseño_props">
+                                <img src="img/porfolio4.png" alt="Diseño de personajes4">
+                            </div>
+                            <div id="diseño_impresion">
+                                <img src="img/porfolio5.png" alt="Diseño de personajes5">
+                                <img src="img/porfolio6.png" alt="Diseño de personajes6">
+                            </div> -->
+                                <div class="selector_proyectos">
+                                    <a href="#diseño_personajes"><img src="img/personajes.svg" alt="Diseño de personajes"></a>
+                                    <a href="#diseño_props"><img src="img/props.svg" alt="Diseño de props"></a>
+                                    <a href="#diseño_impresion"><img src="img/environment.svg" alt="Diseño para impresion "></a>
+                                </div>
+                            </div>
+                        </div>  
                 </div>
-                <div class="container_input">
-                    <label for="email"></label>
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="container_input">
-                    <label for="mensaje"></label>
-                    <input type="mensaje" rows="4" placeholder="Mensaje">
-                </div>
-                <!------------- BOTÓN ------------->
-                <div>
-                    <input class="boton_enviar" type="submit" value="Enviar">
-                </div>
-            </div>
-        </section>
+            </div>                     
+            </section>
+        </section>        
+                <!-- FORMULARIO CONTACTO -->
+            <section  class="contacto">
+                <section class="formulario">
+                    <legend id="contacto">¡ESCRÍBEME!</legend>
+                    <div class="inputs">
+                        <div class="container_input">
+                            <label for="nombre"></label>
+                            <input type="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="container_input">
+                            <label for="email"></label>
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="container_input">
+                            <label for="mensaje"></label>
+                            <input type="mensaje" rows="4" placeholder="Mensaje">
+                        </div>
+                        <!------------- BOTÓN ------------->
+                        <div>
+                            <input class="boton_enviar" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </section>                
+            </section>
+            <section class="imagen_footer"></section>        
     </main>
+    
 </body>
 <footer>
     <p>&copy; Todos los derechos reservados. Raquel Reyes Escudero</p>
