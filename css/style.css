@@ -1,3 +1,4 @@
+/* ******************************************************** */
 /* -------------------------COLORES------------------------ */
 :root{
     --white: rgb(255, 255, 255);
@@ -14,7 +15,7 @@
 /* ----------------------ESTILO GENERAL-------------------- */
 html{
     font-family: quicksand;
-    font-size: 80%;
+    font-size: 60%;
     height: 100vh;
     color: var(--white);
     font-weight: lighter;
@@ -27,27 +28,6 @@ html{
    height: fill;
    width: 100%;
 }
-/* ------------------DIVIDIR EN COLUMNAS------------------- */
-@media (min-width:768px){
-    .columnas{
-        display: flex;
-        column-count: 2;
-        }
-}
-.columna1{
-    background-color: var(--secondaryLight);
-    filter: opacity(100%);
-    position: fixed;
-    height: 100%;
-         
-}
-
-.columna2{
-    /* display: flex; */
-    height: fill;
-    width: 100%;
-    /* align-items: right; */
-}
 
 /* ----------------TAMAÑO DE LA CAJA GENERAL---------------- */
 *{
@@ -59,7 +39,7 @@ html{
 /* ---------------------ESTILO FUENTES---------------------- */
 h1{
     font-size: 3rem;
-    font-weight: lighter;
+    font-weight: bold;
     color: var(--black);
 }
 
@@ -75,14 +55,27 @@ h3{
 }
 
 h4{
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: lighter;
-    color: var(--white)
+    color: var(--white);
 }
 p{
     font-size: 2rem;
     font-weight: lighter;
-    color: var(--secondaryDark)
+    color: var(--secondaryDark);
+    margin:2% 15%;
+}
+
+.slider-container p{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: var(--white);
+}
+
+.slider-container h3{
+    font-size: 3rem;
+    font-weight: lighter;
+    color: var(--white);
 }
 
 /* ******************************************************** */
@@ -103,35 +96,46 @@ hr{
     margin: 3rem;
 }
 
-/* --------------BUSCADOR--------------- */
+/* ---------ENLACE ARTSTATION BANNER---------- */
+.artsation_banner img{
+    width: 5rem;
+    margin: 1rem;
+}
+
+.artsation_banner img:hover{
+    filter: opacity(20%);
+    cursor: pointer;
+    scale: 80%;
+}
+
+/* --------------NAVEGADOR--------------- */
 
 /* --------Caja-------- */
 .buscador{
     background-color: var(--secondaryLight);
-    width: 20%;
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /* --------Letras enlaces-------- */
 .buscador a{
-    padding: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--black);
     text-decoration: none;
     font-weight: bold;
+    width: 100%;
 }
 
 .buscador a:hover{
-    color: var(--primaryLight);
+    color: var(--white);
 }
 
 /* ------------------------MAIN------------------------- */
 /* --------Foto de perfil-------- */
-.foto_perfil img{
-    scale: 40%;
+.foto_perfil{
+    scale: 20%;
     border-radius: 100%;
     display: flex;
     align-items: left;
@@ -299,22 +303,20 @@ hr{
     animation-delay: 1.75s;
 }
 
-
+/* ******************************************************** */
 /* ----------------------FORMULARIO----------------------- */
 .formulario{
-    background-color: var(--secondary); filter: opacity(100%);
-    padding: 4rem;
-    padding-bottom: 9rem;
+    background-color: #b792ccc0;
+    padding-bottom: 6rem;
     text-align: center;
     border-radius: 20px;
-    margin: 20%;
 }
 
 .contacto{
+    padding: 100px;
     background-image: url(../img/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
-  
 } 
 
 .formulario legend{
@@ -350,6 +352,11 @@ hr{
     cursor: url('../img/mouse_pointer.png'), pointer;
 }
 
+/* ----------------------MAPS----------------------- */
+iframe{
+    margin: auto;
+}
+/* ******************************************************** */
 /* ----------------------FOOTER----------------------- */
 footer{
     text-align: center;
@@ -365,4 +372,6 @@ footer img{
 footer img:hover{
     filter: opacity(20%);
     cursor: pointer;
+    scale: 80%;
 }
+/* ******************************************************** */
