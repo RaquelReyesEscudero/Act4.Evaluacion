@@ -15,13 +15,12 @@
 /* ----------------------ESTILO GENERAL-------------------- */
 html{
     font-family: quicksand;
-    font-size: 60%;
+    font-size: 50%;
     height: 100vh;
     color: var(--white);
     font-weight: lighter;
     scroll-behavior: smooth;      
     text-align: center;
-    
 }
 
 .meter_porfolio img{
@@ -133,7 +132,7 @@ hr{
     color: var(--white);
 }
 
-/* --------Diseño responsive-------- */
+/* --------Diseño responsive buscador-------- */
 @media (max-width: 720px){
     .buscador{
     display: flex;
@@ -179,16 +178,19 @@ hr{
     width: 16rem;
 }
 
+.selector_proyectos img:hover{
+    opacity: 70%;
+    scale: 105%;
+}
+
 @media (max-width: 720px){
-    .selector_proyectos{
-    display: flex;
-    flex-direction: column;
+    .selector_proyectos img{
+    scale: 50%;
     }
 } 
 
-
-/* --------Imágenes carrusel-------- */
-@keyframes slideShow {
+/* --------Imágenes carrusel TIPO SLIDE-------- */
+@keyframes slideShow { /* --------animación-------- */
     0%, 20% {
         transform: translateX(0);
     }
@@ -207,18 +209,26 @@ hr{
 }
 
 .slider-container {
+    /* width: 100%;
+    height: 100%; */
     width: 960px;
     height: 540px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     margin: auto;
-    
 }
 
 @media (max-width: 720px){
     .slider-container{
-    scale: 50%;
+    scale: 70%;
+    width: 100%;
+    height: 100%;
+    }
+    .slider-container2{
+        scale: 70%;
+        width: 100%;
+        height: 100%;
     }
 } 
 
@@ -252,8 +262,8 @@ hr{
     color: white;
 }
 
-/* --------Animación carrusel-------- */
-@keyframes imageRotation {
+/* --------Animación carrusel TIPO TURNAROUND-------- */
+@keyframes imageRotation { /* --------animación-------- */
     0%, 20% {
         opacity: 1;
     }
@@ -271,12 +281,6 @@ hr{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-@media (max-width: 120px){
-    .slider-container2{
-    scale: 50%;
-    }
-} 
 
 .image-container {
     width: 100%;
@@ -328,6 +332,21 @@ hr{
 
 .image:nth-child(8) {
     animation-delay: 1.75s;
+}
+
+/*!------------- ICONO SUBIR -------------*/
+.flecha_subir img{
+    width: 5rem;
+    margin: 5%;
+    filter: 
+    brightness(5.5) 
+    sepia(6) 
+    hue-rotate(204deg) 
+    saturate(20);
+}
+
+.flecha_subir img:hover{
+    opacity: 60%;
 }
 
 /* ******************************************************** */
@@ -383,6 +402,7 @@ hr{
 iframe{
     margin: auto;
 }
+
 /* ******************************************************** */
 /* ----------------------FOOTER----------------------- */
 footer{
