@@ -78,6 +78,7 @@ p{
     color: var(--white);
 }
 
+
 /* ******************************************************** */
 /* --------------HEADER--------------- */
 header div{
@@ -132,6 +133,14 @@ hr{
     color: var(--white);
 }
 
+/* --------Diseño responsive-------- */
+@media (max-width: 720px){
+    .buscador{
+    display: flex;
+    flex-direction: column;
+    }
+} 
+
 /* ------------------------MAIN------------------------- */
 /* --------Foto de perfil-------- */
 .foto_perfil{
@@ -142,20 +151,19 @@ hr{
 
 }
 
-/* --------Ubicación-------- */
-.ubicacion img{
-    width: 2rem;
-}
-
-.ubicacion a{
-    padding: 2rem;
-    font-size: 1.5rem;
-    color: var(--secondaryDark);
-    text-decoration: none;
+/* -----------------CONÓCEME----------------- */
+.sobremi img{
+    margin: auto;
+    width: 100%;
 }
 /* -----------------CV----------------- */
 .cv{
     margin: auto;
+}
+
+.cv img{
+    margin: auto;
+    width: 100%;
 }
 
 /* --------Selector de proyectos-------- */
@@ -169,8 +177,15 @@ hr{
 
 .selector_proyectos img{
     width: 16rem;
-    /* width: 100%; */
 }
+
+@media (max-width: 720px){
+    .selector_proyectos{
+    display: flex;
+    flex-direction: column;
+    }
+} 
+
 
 /* --------Imágenes carrusel-------- */
 @keyframes slideShow {
@@ -200,6 +215,12 @@ hr{
     margin: auto;
     
 }
+
+@media (max-width: 720px){
+    .slider-container{
+    scale: 50%;
+    }
+} 
 
 .slider {
     width: 400%;
@@ -242,7 +263,7 @@ hr{
 }
 
 .slider-container2 {
-    width: 600px;
+    width: 720px;
     height: 800px;
     margin: 0 auto;
     position: relative;
@@ -250,6 +271,12 @@ hr{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 120px){
+    .slider-container2{
+    scale: 50%;
+    }
+} 
 
 .image-container {
     width: 100%;
