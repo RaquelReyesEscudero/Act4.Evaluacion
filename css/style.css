@@ -162,7 +162,7 @@ hr{
 
 .cv img{
     margin: auto;
-    width: 100%;
+    width: 50%;
 }
 
 /* --------Selector de proyectos-------- */
@@ -336,7 +336,7 @@ hr{
 
 /*!------------- ICONO SUBIR -------------*/
 .flecha_subir img{
-    width: 5rem;
+    width: 7rem;
     margin: 5%;
     filter: 
     brightness(5.5) 
